@@ -1,0 +1,44 @@
+.skeleton {
+  animation: pulse 1.5s infinite;
+  background-color: #77777781;
+  height: 100%; /* Ensure skeleton has the same height as the newsCard */
+  grid-column: 3;
+  grid-row: span 3;
+  width: 400px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.skeletonText {
+  height: 1em;
+  background-color: #e0e0e0;
+  margin: 10px 0;
+}
+
+.skeletonIcon {
+  width: 2em;
+  height: 2em;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+}
+
+.skeletonImage {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  background-color: #e0e0e0;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}

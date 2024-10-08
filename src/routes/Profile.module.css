@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+  background-color: black;
+   height: 100%;
+}
+
+html,
+body {
+  overflow: auto;
+  background-color: black;
+ 
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 15px;
+  column-gap: 10px;
+  color: white;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+.browseButton {
+  background-color: #148a14;
+  color: white;
+  border: none;
+  padding: 4px 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1.5em;
+  transition: transform 0.1s ease-in-out;
+}
+
+.browseButton:hover {
+  transform: scale(1.1);
+}
+
+.footer {
+  border-radius: 8px;
+  padding: 10px;
+  width: 90%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
